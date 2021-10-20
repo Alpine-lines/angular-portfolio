@@ -1,0 +1,13 @@
+.index-page .squares {
+  @include linear-gradient($primary, $success);
+}
+.blog-page,
+.section.section-signup {
+  .squares,
+  .square {
+    @include linear-gradient($primary, $success);
+  }
+}
+.footer {
+  border-top: 2px solid $danger;
+}

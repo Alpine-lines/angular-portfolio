@@ -1,0 +1,113 @@
+.aboutme-page .wrapper {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+div.wrapper  {
+  margin-top: 110px;
+  margin-bottom: -110px !important;
+}
+
+.page-header {
+  padding-top: 5em;
+}
+
+section.section2 {
+  margin-top: -55em !important;
+  padding: 4em auto;
+}
+
+.overlay-icon {
+  position: absolute;
+  left: 50%;
+  top: -13%;
+  transform: translate(-50%, -13%);
+  z-index: 10000;
+}
+
+section.section3 > .container {
+  margin-top: 10em;
+}
+
+section.section3 {
+  margin-top: 5em;
+}
+
+table > thead > tr > th,
+table > tbody > tr > td {
+  text-align: center;
+}
+
+.fa .fa-terminal {
+  position: relative;
+  top: -10rem;
+  right: -2.5rem;
+}
+
+#skills-charts.div {
+  width: 80% !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+// CHARTS CSS
+
+.advanced-pie-chart {
+  width: auto;
+}
+
+.chart-wrapper {
+  width: 100%;
+}
+
+:host-context(div.advanced-pie-legend) div.legend-items > div {
+  color: white !important
+}
+
+.advanced-pie-chart ::ng-deep div.legend-items .legend-item {
+  color: white !important
+}
+
+// TODO: use :host, :host-context, or ::ng-deep to increase legend top margin.
+
+:host(.advanced-pie-chart) .chart-legend {
+    position: relative;
+    top: -5em;
+}
+
+.guage-chart ::ng-deep .chart-legend {
+    position: relative;
+    top: -5em;
+}col-lg-4 col-md-4
+
+:host-context(div.chart-legend) div > div.legend-wrap > ul {
+  display: flex !important;
+  justify-content: center;
+}
+
+.guage-chart ::ng-deep div div.legend-wrap > ul {
+  display: flex;
+  justify-content: center;
+}
+
+:host-context(div.chart-legend) div > div.legend-wrap > ul > li > span.legend-label-text {
+  color: white !important;
+}
+
+.guage-chart ::ng-deep div div.legend-wrap > ul > li span.legend-label-text {
+  color: white !important;
+}
+
+:host-context(.ng-star-inserted) tspan:nth-child(1) {
+  fill: white !important;
+}
+
+.guage-chart ::ng-deep text.ng-star-inserted > tspan:nth-child(1) {
+    fill: white !important;
+}
+
+.guage-chart ::ng-deep div > div {
+  text-align: center;
+}
+

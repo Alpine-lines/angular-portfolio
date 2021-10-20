@@ -1,0 +1,14 @@
+#blog-posts-container {
+    z-index: 1000
+}
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1 !important;
+  min-width: 45% !important;
+  max-width: 100% !important;
+}
+
+.col .reverse {
+  flex-direction: row-reverse;
+}

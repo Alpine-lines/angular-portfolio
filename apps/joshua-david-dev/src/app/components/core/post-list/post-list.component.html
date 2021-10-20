@@ -1,0 +1,27 @@
+<!-- TODO: Display dynamic post grid -->
+<div id="blog-posts-container" class="row">
+  <div class="col">
+    <div class="card card-coin card-plain" *ngFor="let post of posts">
+      <div class="card-header">
+        <img class="img-center rounded-circle img-fluid" src="['assets/img/square1-red.png']" />
+      </div>
+      <div class="card-body p-2">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h4 class="text-uppercase">{{ post.title }}</h4>
+            <span class="text-warning"> {{ post.authorName }} </span>
+            <hr class="line-primary" />
+          </div>
+        </div>
+        <div class="row">
+          <p class="text-center">
+           {{ post.excerpt }}
+          </p>
+        </div>
+      </div>
+      <div class="card-footer text-center">
+        <button class="btn btn-primary btn-simple" [routerLink]="['/blog', post.postId]">Read More</button>
+      </div>
+    </div>
+  </div>
+</div>

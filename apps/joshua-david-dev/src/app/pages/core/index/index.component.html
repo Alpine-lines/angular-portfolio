@@ -1,0 +1,102 @@
+<div class="wrapper">
+  <div class="page-header header-filter">
+
+    <div class="squares square1"></div>
+    <div class="squares square2"></div>
+    <div class="squares square3"></div>
+    <div class="squares square4"></div>
+    <div class="squares square5"></div>
+    <div class="squares square6"></div>
+    <div class="squares square7"></div>
+    <div class="container">
+
+      <div class="content-center width-md">
+        <span class="tim-icons-xxl m-1">
+          <i class="fas fa-terminal" aria-label="hidden"></i>
+        </span>
+        <h1 class="h1-seo">I Build Real-World Solutions.</h1>
+        <h3>
+          As a Full Stack Delveper I have gained experience working with Angular, React, Express, Django, AWS Lambda + API Gateway, SQL, MongoDB, and Apollo GraphQL!
+          Check out my <a routerLink="/portfolio">portfolio</a> to see my work in action!
+          Interested in working with me? Schedule an initial <a routerLink="contact-me#calendly">consultation</a>.
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <section class="section-tools-tech">
+      <img class="path" src="assets/img/path3.png" />
+      <div class="container">
+        <app-tools-and-technologies></app-tools-and-technologies>
+      </div>
+  </section>
+  <div data-background-color="black">
+    <img class="path" src="assets/img/path1.png" />
+    <div class="space-50"></div>
+    <div class="container text-center">
+      <div class="row mb-3 center">
+        <div class="col-sm-6">
+          <a href="https://github.com/Alpine-lines/express-oauth-passport-auth0">
+            <img
+              alt="Image"
+              class="img-raised"
+              src="assets/img/landing-page.png"
+            />
+          </a>
+          <p class="project-description m-3">
+            Auth0 Identity-as-a-Service Quickstart w/ Express CRUD API Example
+          </p>
+          <a
+            class="btn btn-simple btn-danger btn-round m-3"
+            href="https://github.com/Alpine-lines/express-oauth-passport-auth0"
+          >
+            View Source Now!
+          </a>
+          <!-- <a
+            class="btn btn-simple btn-danger btn-round m-3"
+            [routerLink]="['/portfolio', project.slug]" routerLinkActive="router-link-active"
+          >
+            Read More!
+          </a> -->
+        </div>
+        <div class="col-sm-6">
+          <a href="https://github.com/Alpine-lines/django-react-apollo-graphql">
+            <img
+              alt="Image"
+              class="img-raised"
+              src="assets/img/profile-page.png"
+            />
+          </a>
+          <p class="project-description m-3">
+            Django GraphQL API w/ a React and Apollo Frontend
+          </p>
+          <a
+            class="btn btn-simple btn-danger btn-round m-3"
+            href="https://github.com/Alpine-lines/django-react-apollo-graphql"
+          >
+            View Source Now!
+          </a>
+          <!-- <a
+            class="btn btn-simple btn-danger btn-round m-3"
+            [routerLink]="['/portfolio', project.slug]" routerLinkActive="router-link-active"
+          >
+            Read More!
+          </a> -->
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col">
+          <!-- <a
+            class="font-weight-bold text-info my-5"
+            [routerLink]="['/portfolio']"
+          >
+            See Full Portfolio Now! <i class="tim-icons icon-minimal-right text-info"> </i>
+          </a> -->
+        </div>
+      </div>
+      <div class="container center my-5">
+        <app-featured-blog-posts></app-featured-blog-posts>
+      </div>
+    </div>
+  </div>
+</div>

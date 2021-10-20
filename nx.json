@@ -27,12 +27,12 @@
     ]
   },
   "projects": {
-    "basic": {
+    "joshua-david-dev": {
       "tags": []
     },
-    "basic-e2e": {
+    "joshua-david-dev-e2e": {
       "tags": [],
-      "implicitDependencies": ["basic"]
+      "implicitDependencies": ["joshua-david-dev"]
     }
   }
 }

@@ -1,0 +1,167 @@
+<div class="wrapper">
+  <div class="page-header">
+    <div class="content">
+      <div class="container">
+          <div class="col-12">
+            <h1 class="contact-title">Contact Me</h1>
+            <h4 class=" my-2 center">Complex Project? Need to speak with a project manager?</h4>
+            <div class="row center mb-4">
+              <div class="col-md-6">
+                <a
+                  class="btn btn-danger btn-round btn-lg m-2 center"
+                  href="https://calendly.com/joshua-healey/initial-consultation"
+                  target="_blank"
+                >
+                  Schedule a Free Consultation
+                </a>
+              </div>
+            </div>
+            <div class="card card-register mb-5 px-2">
+              <div class="card-header">
+                <img
+                  alt="Card image"
+                  class="card-img"
+                  src="assets/img/square1-red.png"
+                />
+                <h4 class="card-title">Reach Out!</h4>
+              </div>
+              <div class="card-body">
+                <form class="form">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div
+                        class="input-group"
+                        [ngClass]="{ 'input-group-focus': focus === true }"
+                      >
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <i class="tim-icons icon-single-02"> </i>
+                          </div>
+                        </div>
+                        <input
+                          class="form-control"
+                          placeholder="Full Name"
+                          type="text"
+                          (focus)="focus = true"
+                          (blur)="focus = false"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div
+                        class="input-group"
+                        [ngClass]="{ 'input-group-focus': focus1 === true }"
+                      >
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <i class="tim-icons icon-single-02"> </i>
+                          </div>
+                        </div>
+                        <input
+                          class="form-control"
+                          placeholder="Company"
+                          type="text"
+                          (focus)="focus1 = true"
+                          (blur)="focus1 = false"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                 <div class="row">
+                  <div class="col-md-6">
+                    <div
+                      class="input-group"
+                      [ngClass]="{ 'input-group-focus': focus2 === true }"
+                    >
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <i class="tim-icons icon-email-85"> </i>
+                        </div>
+                      </div>
+                      <input
+                        class="form-control"
+                        placeholder="Email"
+                        type="text"
+                        (focus)="focus2 = true"
+                        (blur)="focus2 = false"
+                      />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div
+                        class="input-group"
+                        [ngClass]="{ 'input-group-focus': focus3 === true }"
+                      >
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <i class="tim-icons icon-email-85"> </i>
+                          </div>
+                        </div>
+                        <input
+                          class="form-control"
+                          placeholder="Phone"
+                          type="text"
+                          (focus)="focus3 = true"
+                          (blur)="focus3 = false"
+                        />
+                        </div>
+                      </div>
+                  </div>
+                  <div class="row mt-2">
+                  <div
+                    class="input-group p-3"
+                    [ngClass]="{ 'input-group-focus': focus4 === true }"
+                  >
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <i class="tim-icons icon-lock-circle"> </i>
+                      </div>
+                    </div>
+                    <textarea
+                      class="form-control"
+                      placeholder="Message"
+                      type="text"
+                      (focus)="focus4 = true"
+                      (blur)="focus4 = false"
+                    ></textarea>
+                  </div>
+                </div>
+                  <div class="form-check text-left">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" />
+                      <span class="form-check-sign"> </span> I agree to the
+                      <a href="javascript:void(0)"> terms and conditions </a> .
+                    </label>
+                  </div>
+                </form>
+              </div>
+              <div class="card-footer">
+                <a
+                  class="btn btn-danger btn-round btn-lg mx-1 mb-5 center"
+                  (click)="sendMessage($event)"
+                >
+                  Submit
+                </a>
+              </div>
+            </div>
+        </div>
+        <!-- TODO: h1 position: absolute app-featured-blog-posts position: absolute -->
+        <!-- <div class="row mt-5">
+          <div class="col p-5" style="z-index: 1200;">
+            <h1 class="fw-bolder mb-5">Featured Blog Posts</h1>
+            <app-featured-blog-posts></app-featured-blog-posts>
+          </div>
+        </div> -->
+        <div class="register-bg"></div>
+        <div class="square square-1" id="square1"></div>
+        <div class="square square-2" id="square2"></div>
+        <div class="square square-3" id="square3"></div>
+        <div class="square square-4" id="square4"></div>
+        <div class="square square-5" id="square5"></div>
+        <div class="square square-6" id="square6"></div>
+        <div class="square square-7" id="square7"></div>
+        <div class="square square-8" id="square8"></div>
+      </div>
+    </div>
+  </div>
+</div>

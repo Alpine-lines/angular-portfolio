@@ -1,0 +1,14 @@
+.index-page .squares {
+  @include linear-gradient($primary, $success);
+}
+.contactme-page,
+.section.section-signup {
+  .squares,
+  .square {
+    @include linear-gradient($primary, $success);
+  }
+}
+.footer {
+  border-top: 2px solid $danger;
+}
+// Source mixins

@@ -1,0 +1,14 @@
+h1.title {
+  margin-top: -2rem;
+  margin-bottom: 5rem;
+}
+
+.featured-posts {
+  margin: 10em auto;
+  padding: 10em auto;
+  z-index: 1500;
+}
+
+.featured-posts > h1 {
+  margin: 10em auto;
+}

@@ -1,0 +1,95 @@
+<div class="spacer-110"></div>
+  <div class="page-header mt-3">
+    <div class="squares square1"></div>
+    <div class="squares square2"></div>
+    <div class="squares square3"></div>
+    <div class="squares square4"></div>
+    <div class="squares square5"></div>
+    <div class="squares square6"></div>
+    <div class="squares square7"></div>
+    <div class="content-center">
+      <div class="row center text-center">
+        <div class="col-lg-6 col-md-6 mt-15 pt-10">
+          <h1 class="text-white">
+            Hello and welcome.<br />
+
+            <span class="text-warning mx-1"> I'm Josh! </span>
+          </h1>
+          <p class="text-white mb-3">
+            Here I will discuss the projects I am working on, the tools and technologies I am learning,
+            and the insight I have gained during my time in software development. Expect to high-level explanations of different software
+            technologies and web stacks, tutorials, opensource-friendly business ideas, and the ocassical political post surrounding
+            the ethics of big data and machine learning. Thanks for being here, Josh.
+          </p>
+          <div class="btn-wrapper mb-3">
+            <p class="category text-success d-inline mr-1">Contact Me</p>
+            <a
+              class="btn btn-success btn-link btn-sm"
+              routerLink="/contact-me"
+            >
+              <i class="tim-icons icon-minimal-right"> </i>
+            </a>
+          </div>
+          <div class="btn-wrapper">
+            <app-social-icons color="success"></app-social-icons>
+          </div>
+          </div>
+          <div class="col-lg-5 col-md-6">
+            <div class="card card-coin card-plain">
+              <div class="card-header">
+                <img
+                  class="img-center img-fluid rounded-circle profile-picture"
+                  src="assets/img/josh-healey2.jpg"
+                />
+              </div>
+              <div class="card-body">
+                <div class="featured-posts">
+                  <div class="list-group">
+                    <a [routerLink]="['slug']" class="list-group-item list-group-item-action active" aria-current="true">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">OAuth2 w/ Auth0, Passport, & Angular 11</h5>
+                      </div>
+                      <p class="mb-1">Some placeholder content in a paragraph.</p>
+                      <small class="text-muted">05/05/2021</small>
+                      <small class="text-muted">Author: Joshua David Healey</small>
+                    </a>
+                    <a [routerLink]="['slug']" class="list-group-item list-group-item-action">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Express.js vs. Django: My Opinion</h5>
+                      </div>
+                      <p class="mb-1">Some placeholder content in a paragraph.</p>
+                      <small class="text-muted">05/05/2021</small>
+                      <small class="text-muted">Author: Joshua David Healey</small>
+                    </a>
+                    <a [routerLink]="['slug']" class="list-group-item list-group-item-action">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">My Thoughts on Moralis Web3, the Serverless dApp platform.</h5>
+                      </div>
+                      <p class="mb-1">Some placeholder content in a paragraph.</p>
+                      <small class="text-muted">05/05/2021</small>
+                      <small class="text-muted">Author: Joshua David Healey</small>
+                    </a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="section-blog-posts">
+    <div class="container pt-5 mt-5">
+      <div class="col-lg-12">
+        <app-featured-blog-posts [reverse]='true'></app-featured-blog-posts>
+        <app-post-list [pageSize]='6'></app-post-list>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <section class="section-tools-tech">
+      <img class="path" src="assets/img/path3.png" />
+      <div class="container">
+        <app-tools-and-technologies></app-tools-and-technologies>
+    </div>
+  </section>
+</div>
