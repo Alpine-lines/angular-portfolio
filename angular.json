@@ -37,7 +37,7 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumError": "1.5mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -47,8 +47,8 @@
               ],
               "fileReplacements": [
                 {
-                  "replace": "apps/joshua-david-dev/src/app/environments/environment.ts",
-                  "with": "apps/joshua-david-dev/src/app/environments/environment.prod.ts"
+                  "replace": "apps/joshua-david-dev/src/environments/environment.ts",
+                  "with": "apps/joshua-david-dev/src/environments/environment.prod.ts"
                 }
               ],
               "outputHashing": "all"
@@ -97,6 +97,12 @@
           "options": {
             "jestConfig": "apps/joshua-david-dev/jest.config.js",
             "passWithNoTests": true
+          }
+        },
+        "firebase": {
+          "builder": "@nxtend/firebase:firebase",
+          "options": {
+            "cmd": "--help"
           }
         }
       }
